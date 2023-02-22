@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScripts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section">
+        <div class="main">
+            <h1>Calulator App</h1>
+            <h2><input type="number" id="inputValue" placeholder="Enter number"></h2>
+            <h2><span>Count: </span><span id="conter">0</span></h2>
+        </div>
+        <div class="col">
+            <button class="btn operation" data-operate_data="add" id="increment_btn">+</button>
+            <button class="btn operation" data-operate_data="subtract" id="decrement_btn">-</button>
+
+            <button class="btn operation" data-operate_data="divide" id="divide_btn">/</button>
+            <button class="btn operation" data-operate_data="multiply" id="multiply_btn">x</button>
+            <button class="btn" id="equal_btn">=</button>
+            
+        </div> 
+
+        <div class="row">
+            <p id="entries">Previous Entries: </p>
+        </div> 
+    </section>
+    
+    <script>
+        window.addEventListener('load', function(){
+            calucator()
+        })
+        
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
